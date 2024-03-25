@@ -9,12 +9,14 @@ import (
 )
 
 const (
-	DB_HOST     = "localhost"
-	DB_USER     = "postgres"
-	DB_PASSWORD = "root"
-	DB_PORT     = 5432
-	DB_NAME     = "tes1_3"
-	DEBUG_MODE  = true // true/false
+	POSTGRES_URL="postgres://default:CHNhY9Uw6fjQ@ep-late-queen-a1jhdpqs-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
+	POSTGRES_PRISMA_URL="postgres://default:CHNhY9Uw6fjQ@ep-late-queen-a1jhdpqs-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15"
+	POSTGRES_URL_NO_SSL="postgres://default:CHNhY9Uw6fjQ@ep-late-queen-a1jhdpqs-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb"
+	POSTGRES_URL_NON_POOLING="postgres://default:CHNhY9Uw6fjQ@ep-late-queen-a1jhdpqs.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
+	POSTGRES_USER="default"
+	POSTGRES_HOST="ep-late-queen-a1jhdpqs-pooler.ap-southeast-1.aws.neon.tech"
+	POSTGRES_PASSWORD="CHNhY9Uw6fjQ"
+	POSTGRES_DATABASE="verceldb"
 )
 
 var (
